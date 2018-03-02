@@ -10,7 +10,6 @@ function RandomNumBoth(Min,Max){
 
 $(document).ready(function(){
 	$(".btn-default").css({"color":"#FFFFFF",'backgroundColor':'rgb(231, 76, 60)'});
-	// $(".container>div.quote").
 	var content = "";
 	var author = "";
 	$.getJSON("https://sslapi.hitokoto.cn/",function(json,c){
@@ -23,7 +22,7 @@ $(document).ready(function(){
 		$(".panel-body>span.quote").css("fontSize",'25px');
 	})
 	$(".container").css("height",$(window).height());
-	$(".container>.quote").css("marginTop",$(".container").height()/3);
+	$(".container>.quote").css("marginTop",$(".container").height()/4);
 	$(".container>.quote").css("marginLeft",$(".container").width()/2-$(".container>.quote").width()/2);
 	$("#changeBtn").click(function(){
 		$.getJSON("https://sslapi.hitokoto.cn/",function(json,c){
